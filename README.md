@@ -18,5 +18,7 @@ Quer aprender PowerShell? Acesse: [DOCs Microsoft - PowerShell][] (Externo)
 | **NOME**                              | **DESCRIÇÃO**                                                 |
 | ------------------------------------- | ------------------------------------------------------------- |
 | [PRTG-Powershell]   | O PRTG é uma poderosa ferramentas de Monitoramento   |
+| [PORTAINER-Powershell]   | O PORTAINER é uma poderosa ferramentas de Gerenciamento para Docker e Swarm   |
 
 [PRTG-Powershell]: PRTG-Powershell/
+[PORTAINER-Powershell]: PORTAINER-Powershell/
