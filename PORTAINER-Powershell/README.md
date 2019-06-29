@@ -10,5 +10,7 @@ Podemos dizer que o Portainer é uma poderosa solução para gerenciamento de re
 | **NOME**                              | **DESCRIÇÃO**                                                 |
 | ------------------------------------- | ------------------------------------------------------------- |
 | [Add-PortainerStackFile.ps1]   | Adiciona Stack usando o conteudo de um arquivo YAML através da API do Portainer   |
+| [Get-PortainerStack.ps1]   | Obtendo lista dps Stack cadastrado no Portainer   |
 
-[Add-PortainerStackFile.ps1]: Add-PortainerStackFile/
+[Add-PortainerStackFile.ps1]: Add-PortainerStackFile.ps1
+[Get-PortainerStack.ps1]: Get-PortainerStack.ps1
