@@ -73,15 +73,6 @@ Begin {
 
     Write-Host "$(Get-Date) - [INFO]: MOTANDO CREDENCIAIS DE ACESSO A API" -ForegroundColor Cyan
     try {
-        if( -not([string]::IsNullOrEmpty($User)) -and -not([string]::IsNullOrEmpty($Password)) ) {
-            $BSTR = [System.Runtime.InteropServices.Marshal]::SecureStringToBSTR($Password)
-            $UnsecurePassword = [System.Runtime.InteropServices.Marshal]::PtrToStringAuto($BSTR)
-
-            $jsonAuth = @{Username=$User;Password=$UnsecurePassword}
-            $jsonAuth = $jsonAuth | ConvertTo-Json
-            Write-Host "--> $(Get-Date) - [SUCESS]: USANDO PARAMETROS USER E PASSWORD" -ForegroundColor Green
-        }
-
         if( -not([string]::IsNullOrEmpty($Credential)) ) {
             $BSTR = [System.Runtime.InteropServices.Marshal]::SecureStringToBSTR($Credential.Password)
             $UnsecurePassword = [System.Runtime.InteropServices.Marshal]::PtrToStringAuto($BSTR)
@@ -89,6 +80,18 @@ Begin {
             $jsonAuth = @{Username=$User;Password=$UnsecurePassword}
             $jsonAuth = $jsonAuth | ConvertTo-Json
             Write-Host "--> $(Get-Date) - [SUCESS]: USANDO PARAMETRO CREDENTIAL" -ForegroundColor Green
+        }
+
+        if( -not([string]::IsNullOrEmpty($User)) -and -not([string]::IsNullOrEmpty($Password)) ) {
+            $BSTR = [System.Runtime.InteropServices.Marshal]::SecureStringToBSTR($Password)
+            $UnsecurePassword = [System.Runtime.InteropServices.Marshal]::PtrToStringAuto($BSTR)
+
+            $jsonAuth = @{Username=$User;Password=$UnsecurePassword}
+            $jsonAuth = $jsonAuth | ConvertTo-Json
+            Write-Host "--> $(Get-Date) - [SUCESS]: USANDO PARAMETROS USER E PASSWORD" -ForegroundColor Green
+        } else {
+            Write-Host "$(Get-Date) - [WARNING]: USER OU PASSWORD FALTANDO" -ForegroundColor Yellow
+            return $LASTEXITCODE = 1
         }
     } catch {
         Write-Host "--> $(Get-Date) - [ERROR]: DEU RUIM" -ForegroundColor Red
