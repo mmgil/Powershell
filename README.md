@@ -1,2 +1,22 @@
-# Powershell
-Scripts Powershell para as ferramentas que mais uso
+# PowerShell
+Um Repositório aonde guardarei os scripts em PowerShell para diversas ferramentas do meu dia-a-dia.
+
+Bem vindo a este repositório, aqui realizaremos o desenvolvimento, automação em  PowerShell para usarmos em varias ferramentas!
+
+# O que é o PowerShell?
+
+O PowerShell é um Framework de automação e configuração multi-plataforma (Windows, Linux e MacOS) que funciona bem com o seu ambiente independente das suas ferramentas já existentes. O PowerShell é otimizado para lidar com dados estruturados (por exemplo, JSON, CSV, XML, etc.), APIs REST e modelos de objeto.
+
+Ele inclui um shell de linha de comando, uma linguagem de script associada e uma estrutura para cmdlets de processamento.
+
+Quer aprender PowerShell? Acesse: [DOCs Microsoft - PowerShell][] (Externo)
+
+[DOCs Microsoft - PowerShell]: https://docs.microsoft.com/pt-br/powershell/scripting/powershell-scripting?view=powershell-5.1
+
+# INDICE
+
+| **NOME**                              | **DESCRIÇÃO**                                                 |
+| ------------------------------------- | ------------------------------------------------------------- |
+| [PRTG-Powershell]   | O PRTG é uma poderosa ferramentas de Monitoramento   |
+
+[PRTG-Powershell]: PRTG-Powershell/
