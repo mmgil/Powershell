@@ -9,6 +9,6 @@ Podemos dizer que o Portainer é uma poderosa solução para gerenciamento de re
 
 | **NOME**                              | **DESCRIÇÃO**                                                 |
 | ------------------------------------- | ------------------------------------------------------------- |
-| [Add-PortainerStack]   | O Powershell é uma poderosa ferramentas de Gerenciamento de Conteiners   |
+| [Add-PortainerStackFile.ps1]   | O Powershell é uma poderosa ferramentas de Gerenciamento de Conteiners   |
 
-[PRTG-Powershell]: PRTG-Powershell/
+[Add-PortainerStackFile.ps1]: Add-PortainerStackFile/
