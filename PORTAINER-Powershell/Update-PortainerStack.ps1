@@ -43,7 +43,7 @@ param(
     [Parameter( Mandatory = $True, ValueFromPipeline = $True, position = 2, HelpMessage = "Informe o caminho do arquivo YAML" )]
     [string]$StackFile = $( Read-Host "StackFile" ),
 
-    [Parameter( Mandatory = $false, position = 3, HelpMessage = "EndpointID é o ID do Endpoint cadastrado no Portainer" )]
+    [Parameter( Mandatory = $True, position = 3, HelpMessage = "EndpointID é o ID do Endpoint cadastrado no Portainer" )]
     [string]$EndpointID,
 
     [Parameter( Mandatory = $false, ParameterSetName='UserAsPlanText', position = 5, HelpMessage = "Informe o usuario que tem acesso a API do Portainer" )]
@@ -61,7 +61,7 @@ Begin {
     Write-Host "$(Get-Date) - [INFO]: INICIANDO AÇÕES" -ForegroundColor Cyan
     Write-Host "$(Get-Date) - [INFO]: MOTANDO VARIÁVEIS" -ForegroundColor Cyan
     [uri]$portainerApiAuth = $PortainerURL+"/api/auth"
-    [uri]$stackUrl = $PortainerURL+"/api/stacks/$StackID"
+    [uri]$stackUrl = $PortainerURL+"/api/stacks/$StackID?endpointID=$EndpointID"
 
 
 
@@ -138,7 +138,7 @@ Begin {
       }
 
       $jsonFile = @{
-          Prune = "false";
+          Prune = $false;
           StackFileContent = "tempdata";
       }
 
@@ -148,7 +148,7 @@ Begin {
 
       Write-Host "$(Get-Date) - [INFO]: ENVIANDO REQUISIÇÃO PARA A API DO PORTAINER" -ForegroundColor Cyan
       try {
-        $portainer = Invoke-RestMethod -Uri $stackUrl -Method Put -ContentType "application/json" -Body $jsonFile -Headers $Headers
+        $portainer = Invoke-RestMethod -Uri $stackUrl.AbsoluteUri -Method Put -ContentType "application/json" -Body $jsonFile -Headers $Headers
         $portainer
       } catch {
         $ErrorMessage = $_.Exception.Message
