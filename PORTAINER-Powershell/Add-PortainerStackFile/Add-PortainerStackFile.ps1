@@ -182,7 +182,7 @@ Begin {
         $portainer
       } catch {
         $ErrorMessage = $_.Exception.Message
-        Write-Host "--> $(Get-Date) - [ERROR]: DEU RUIM -> $Exception" -ForegroundColor Red
+        Write-Host "--> $(Get-Date) - [ERROR]: DEU RUIM -> $ErrorMessage" -ForegroundColor Red
         return $LASTEXITCODE = 1
       }
 
