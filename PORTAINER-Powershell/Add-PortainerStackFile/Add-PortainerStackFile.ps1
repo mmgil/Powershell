@@ -53,10 +53,10 @@ param(
     [string]$User,
 
     [Parameter( Mandatory = $false, ParameterSetName='UserAsPlanText', position = 6, HelpMessage = "Informe a senha do usuario que tem acesso a API do Portainer" )]
-    [SecureString]$Password = $( Read-Host -Prompt "Password" -AsSecureString ),
+    [SecureString]$Password,
 
     [Parameter( Mandatory = $false, ParameterSetName='SecureCredential', position = 5, HelpMessage = "Informea senha do usuario que tem acesso a API do Portainer" )]
-    [System.Management.Automation.PSCredential]$Credential = $( Get-Credential )
+    [System.Management.Automation.PSCredential]$Credential
 
 )
 
