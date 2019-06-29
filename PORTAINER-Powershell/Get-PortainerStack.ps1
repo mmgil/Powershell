@@ -42,7 +42,7 @@ Begin {
     Write-Host "$(Get-Date) - [INFO]: INICIANDO AÇÕES" -ForegroundColor Cyan
     Write-Host "$(Get-Date) - [INFO]: MOTANDO VARIÁVEIS" -ForegroundColor Cyan
     [uri]$portainerApiAuth = $PortainerURL+"/api/auth"
-    [uri]$stackUrl = $PortainerURL+"/stacks"
+    [uri]$stackUrl = $PortainerURL+"/api/stacks"
 
     Write-Host "$(Get-Date) - [INFO]: MOTANDO CREDENCIAIS DE ACESSO A API" -ForegroundColor Cyan
     try {
@@ -95,7 +95,7 @@ Begin {
 
       Write-Host "$(Get-Date) - [INFO]: ENVIANDO REQUISIÇÃO PARA A API DO PORTAINER" -ForegroundColor Cyan
       try {
-        $portainer = Invoke-RestMethod -Uri $stackUrl -Method Get -Headers $Headers
+        $portainer = Invoke-RestMethod -Uri $stackUrl.AbsoluteUri -Method Get -Headers $Headers
         $portainer
       } catch {
         $ErrorMessage = $_.Exception.Message
