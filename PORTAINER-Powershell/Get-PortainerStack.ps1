@@ -64,11 +64,11 @@ Begin {
             Write-Host "--> $(Get-Date) - [SUCESS]: USANDO PARAMETROS USER E PASSWORD" -ForegroundColor Green
         } else {
             Write-Host "$(Get-Date) - [WARNING]: USER OU PASSWORD FALTANDO" -ForegroundColor Yellow
-            return $LASTEXITCODE = 1
+            exit $LASTEXITCODE = 1
         }
     } catch {
         Write-Host "--> $(Get-Date) - [ERROR]: DEU RUIM" -ForegroundColor Red
-        return $LASTEXITCODE = 1
+        exit $LASTEXITCODE = 1
     }
 
 
@@ -80,7 +80,7 @@ Begin {
         }
     } catch {
         Write-Host "--> $(Get-Date) - [ERROR]: DEU RUIM" -ForegroundColor Red
-        return $LASTEXITCODE = 1
+        exit $LASTEXITCODE = 1
     }
 
     Write-Host "$(Get-Date) - [INFO]: PREPARANDO DADOS PARA ENVIAR" -ForegroundColor Cyan
@@ -100,7 +100,7 @@ Begin {
       } catch {
         $ErrorMessage = $_.Exception.Message
         Write-Host "--> $(Get-Date) - [ERROR]: DEU RUIM -> $ErrorMessage" -ForegroundColor Red
-        return $LASTEXITCODE = 1
+        exit $LASTEXITCODE = 1
       }
 
 
