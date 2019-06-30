@@ -61,8 +61,8 @@ param(
 )
 
 Begin {
-    Write-Host "$(Get-Date) - [INFO]: INICIANDO AÇÕES" -ForegroundColor Cyan
-    Write-Host "$(Get-Date) - [INFO]: MOTANDO VARIÁVEIS" -ForegroundColor Cyan
+    Write-Host "$(Get-Date) - [INFO]: INICIANDO ACOES (Add-PortainerStackFile)" -ForegroundColor Cyan
+    Write-Host "$(Get-Date) - [INFO]: MOTANDO VARIAVEIS" -ForegroundColor Cyan
     [uri]$portainerApiAuth = $PortainerURL+"/api/auth"
     [uri]$portainerApiEndpoint = $PortainerURL+"/api/endpoints"
     [uri]$stackUrl = $PortainerURL+"/api/stacks?type=1&method=string&endpointId=1"
