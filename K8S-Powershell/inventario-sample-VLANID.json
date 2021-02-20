@@ -1,0 +1,237 @@
+{
+  "virtual-machines": [
+    {
+      "nodes": [
+        {
+          "node": {
+            "VMName": ["kubecontroller"],
+            "Role": "controller",
+            "vCPU": 4,
+            "MemoryAssigned": 2147483648,
+            "Path": "D:\\maquinasvirtuais\\kubecontroller",
+            "Generation": 2,
+            "DynamicMemoryEnabled": false,
+            "rootPassword": "1234@Abcd",
+            "OperationalSystem": {
+              "OperationalSystem": "CentOS76",
+              "VHDxBaseType": "SMB",
+              "VHDxBaseSMB": "\\\\winnode01\\d$\\ISOs\\CORE_CENTOS_76_10GB_disk_1.vhdx",
+              "VHDxBaseHTTP": "https://repositorio.mmgil.com.br/CentOS/CORE_CENTOS_76_10GB_disk_1.vhdx"
+            },
+            "Network": {
+              "SwitchName": "vSwitch01",
+              "IsLegacy": false,
+              "DynamicMacAddressEnabled": true,
+              "VMNetworkAdapterVlan": {
+                "OperationMode": "Access",
+                "AccessVlanId": 5
+              },
+              "NetConfigurations": {
+                "IPAddress": ["10.10.0.230"],
+                "MASK": ["255.255.255.0"],
+                "Gateway": ["10.10.0.1"],
+                "DNSs": ["10.10.0.15", "10.10.0.16"],
+                "SuffixDNS": ["mmgil.com.br"]
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "nodes": [
+        {
+          "node": {
+            "VMName": ["kubemaster01"],
+            "Role": "master",
+            "vCPU": 4,
+            "MemoryAssigned": 4294967296,
+            "Path": "D:\\maquinasvirtuais\\kubemaster01",
+            "Generation": 2,
+            "IsClustered": false,
+            "DynamicMemoryEnabled": false,
+            "rootPassword": "1234@Abcd",
+            "OperationalSystem": {
+              "OperationalSystem": "CentOS76",
+              "VHDxBaseType": "SMB",
+              "VHDxBaseSMB": "\\\\winnode01\\d$\\ISOs\\CORE_CENTOS_76_10GB_disk_1.vhdx",
+              "VHDxBaseHTTP": "https://repositorio.mmgil.com.br/CentOS/CORE_CENTOS_76_10GB_disk_1.vhdx"
+            },
+            "Network": {
+              "SwitchName": "vSwitch01",
+              "IsLegacy": false,
+              "DynamicMacAddressEnabled": true,
+              "VMNetworkAdapterVlan": {
+                "OperationMode": "Access",
+                "AccessVlanId": 5
+              },
+              "NetConfigurations": {
+                "IPAddress": ["10.10.0.231"],
+                "MASK": ["255.255.255.0"],
+                "Gateway": ["10.10.0.1"],
+                "DNSs": ["10.10.0.15", "10.10.0.16"],
+                "SuffixDNS": ["mmgil.com.br"]
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "nodes": [
+        {
+          "node": {
+            "VMName": ["kubemaster02"],
+            "Role": "master",
+            "vCPU": 4,
+            "MemoryAssigned": 4294967296,
+            "Path": "D:\\maquinasvirtuais\\kubemaster02",
+            "Generation": 2,
+            "IsClustered": false,
+            "DynamicMemoryEnabled": false,
+            "rootPassword": "1234@Abcd",
+            "OperationalSystem": {
+              "OperationalSystem": "CentOS76",
+              "VHDxBaseType": "SMB",
+              "VHDxBaseSMB": "\\\\winnode01\\d$\\ISOs\\CORE_CENTOS_76_10GB_disk_1.vhdx",
+              "VHDxBaseHTTP": "https://repositorio.mmgil.com.br/CentOS/CORE_CENTOS_76_10GB_disk_1.vhdx"
+            },
+            "Network": {
+              "SwitchName": "vSwitch01",
+              "IsLegacy": false,
+              "DynamicMacAddressEnabled": true,
+              "VMNetworkAdapterVlan": {
+                "OperationMode": "Access",
+                "AccessVlanId": 5
+              },
+              "NetConfigurations": {
+                "IPAddress": ["10.10.0.232"],
+                "MASK": ["255.255.255.0"],
+                "Gateway": ["10.10.0.1"],
+                "DNSs": ["10.10.0.15", "10.10.0.16"],
+                "SuffixDNS": ["mmgil.com.br"]
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "nodes": [
+        {
+          "node": {
+            "VMName": ["kubemaster03"],
+            "Role": "master",
+            "vCPU": 4,
+            "MemoryAssigned": 4294967296,
+            "Path": "D:\\maquinasvirtuais\\kubemaster03",
+            "Generation": 2,
+            "IsClustered": false,
+            "DynamicMemoryEnabled": false,
+            "rootPassword": "1234@Abcd",
+            "OperationalSystem": {
+              "OperationalSystem": "CentOS76",
+              "VHDxBaseType": "SMB",
+              "VHDxBaseSMB": "\\\\winnode01\\d$\\ISOs\\CORE_CENTOS_76_10GB_disk_1.vhdx",
+              "VHDxBaseHTTP": "https://repositorio.mmgil.com.br/CentOS/CORE_CENTOS_76_10GB_disk_1.vhdx"
+            },
+            "Network": {
+              "SwitchName": "vSwitch01",
+              "IsLegacy": false,
+              "DynamicMacAddressEnabled": true,
+              "VMNetworkAdapterVlan": {
+                "OperationMode": "Access",
+                "AccessVlanId": 5
+              },
+              "NetConfigurations": {
+                "IPAddress": ["10.10.0.233"],
+                "MASK": ["255.255.255.0"],
+                "Gateway": ["10.10.0.1"],
+                "DNSs": ["10.10.0.15", "10.10.0.16"],
+                "SuffixDNS": ["mmgil.com.br"]
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "nodes": [
+        {
+          "node": {
+            "VMName": ["kubenode01"],
+            "Role": "node",
+            "vCPU": 4,
+            "MemoryAssigned": 2147483648,
+            "Path": "D:\\maquinasvirtuais\\kubenode01",
+            "Generation": 2,
+            "IsClustered": false,
+            "DynamicMemoryEnabled": false,
+            "rootPassword": "1234@Abcd",
+            "OperationalSystem": {
+              "OperationalSystem": "CentOS76",
+              "VHDxBaseType": "SMB",
+              "VHDxBaseSMB": "\\\\winnode01\\d$\\ISOs\\CORE_CENTOS_76_10GB_disk_1.vhdx",
+              "VHDxBaseHTTP": "https://repositorio.mmgil.com.br/CentOS/CORE_CENTOS_76_10GB_disk_1.vhdx"
+            },
+            "Network": {
+              "SwitchName": "vSwitch01",
+              "IsLegacy": false,
+              "DynamicMacAddressEnabled": true,
+              "VMNetworkAdapterVlan": {
+                "OperationMode": "Access",
+                "AccessVlanId": 5
+              },
+              "NetConfigurations": {
+                "IPAddress": ["10.10.0.234"],
+                "MASK": ["255.255.255.0"],
+                "Gateway": ["10.10.0.1"],
+                "DNSs": ["10.10.0.15", "10.10.0.16"],
+                "SuffixDNS": ["mmgil.com.br"]
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "nodes": [
+        {
+          "node": {
+            "VMName": ["kubenode02"],
+            "Role": "node",
+            "vCPU": 4,
+            "MemoryAssigned": 2147483648,
+            "Path": "D:\\maquinasvirtuais\\kubenode02",
+            "Generation": 2,
+            "IsClustered": false,
+            "DynamicMemoryEnabled": false,
+            "rootPassword": "1234@Abcd",
+            "OperationalSystem": {
+              "OperationalSystem": "CentOS76",
+              "VHDxBaseType": "SMB",
+              "VHDxBaseSMB": "\\\\winnode01\\d$\\ISOs\\CORE_CENTOS_76_10GB_disk_1.vhdx",
+              "VHDxBaseHTTP": "https://repositorio.mmgil.com.br/CentOS/CORE_CENTOS_76_10GB_disk_1.vhdx"
+            },
+            "Network": {
+              "SwitchName": "vSwitch01",
+              "IsLegacy": false,
+              "DynamicMacAddressEnabled": true,
+              "VMNetworkAdapterVlan": {
+                "OperationMode": "Access",
+                "AccessVlanId": 5
+              },
+              "NetConfigurations": {
+                "IPAddress": ["10.10.0.235"],
+                "MASK": ["255.255.255.0"],
+                "Gateway": ["10.10.0.1"],
+                "DNSs": ["10.10.0.15", "10.10.0.16"],
+                "SuffixDNS": ["mmgil.com.br"]
+              }
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
