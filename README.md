@@ -11,7 +11,7 @@ Ele inclui um shell de linha de comando, uma linguagem de script associada e uma
 
 Quer aprender PowerShell? Acesse: [DOCs Microsoft - PowerShell][] (Externo)
 
-[DOCs Microsoft - PowerShell]: https://docs.microsoft.com/pt-br/powershell/scripting/powershell-scripting?view=powershell-5.1
+[DOCs Microsoft - PowerShell]: https://docs.microsoft.com/pt-br/powershell/
 
 # INDICE
 
