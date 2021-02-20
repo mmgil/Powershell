@@ -17,7 +17,9 @@ Veja mais sobre o [Kubespray]
 - Hyper-V (Hyper-V Server Standalone, Windows Server 2019 ou Windows 10 PRO)
 - SSH Client habilitado no seu Windows (Hoje já vem nativo, basta apenas testar no Powershell: ssh -v localhost)
 - Powershell na versão mínima 5.1 (Requer também o módulo Powershell do Hyper-V)
-- Um VHDx template com o CentOS 7.x instalado (Eu não subi o meu por conta dele ter 4GB, deixaria o repositorio pesado pra baixar e sem contar que não é legal guardar binários em repos git)
+- Um VHDx template com o CentOS 7.x instalado (Caso queira usar o meu template Clique aqui: [CentOS76])
+
+[CentOS76]: https://sistemasmmgil-my.sharepoint.com/:u:/g/personal/moises_mmgil_com_br/EWdgDytCBPNFuTE0jWSnAiYBsR-SOtU_dpdVMyF10IMIRw?e=3v1SMt
 
 ## Hardware
 - Memória RAM: 16 GB (mínimo)
