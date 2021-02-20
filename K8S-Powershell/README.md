@@ -3,7 +3,7 @@ O K8S (Kubernetes) sem dúvidas é a sensação do momento e já provou que cheg
 
 Todas as principais nuvens oferecem o Kubernetes como serviço, o que gera também um alto poder de flexibilidade para a sua aplicação ser o menos lockin possível já que, caso sua aplicação funcione perfeitamente em um cluster de K8S local, com certeza irá funcionar em qualquer nuvem pública nao importa qual ela seja.
 
-Diante disso e vendo ainda o grande poder de infiltração que o Windows 10 PRO tem nas empresas e nos computadores de trabalho da grande maioria das pessoas, resolvi desenvolver esse script para que você, através de um prompt de PowerShell, possa provisionar um cluster de K8S usando o Hyper-V da sua máquina.
+Diante disso e vendo ainda o grande poder de infiltração que o Windows 10 PRO tem nas empresas e nos computadores de trabalho da grande maioria das pessoas, sem contar sobre o Hyper-V Server que continua sendo a melhor alternativa para as empresas que querem economizar com virtualização sem abrir mão de uma ferramenta robusta e com alta disponibilidade, resolvi desenvolver esse script para que você, através de um prompt de PowerShell, possa provisionar um cluster de K8S usando o Hyper-V da sua máquina ou o seu Hyper-V de Produção.
 
 Esse Script provisiona as VMs de acordo com o preenchimento do arquivo JSON de inventário. Nos modelos daqui do repositório será provisionado 3 masters e 2 nodes. Um outro servidor chamado controller baixará o projeto Kubespray para realizar a implantação do cluster após provisionamento das VMs. O Kubespray é um projeto para provisionamento de cluster K8S de produção no seu ambiente On Premisses usando o Ansible.
 
