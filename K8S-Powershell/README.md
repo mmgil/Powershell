@@ -42,6 +42,9 @@ Na pasta K8S-Powershell voce encontrará um arquivo modelo chamado inventario-sa
 - 3 Masters -> Serão os servidores responsáveis pelo cluster de K8S.
 - 2 Nodes -> Serão os nodes de K8S que hospedará as aplicações deployadas nesse ambiente.
 
+A seguir você pode ler a descrição de cada chave no arquivo json de inventário
+
+
 | **NOME**                                 | **DESCRIÇÃO**                                                 |
 | ----------------------                   | ------------------------------------------------------------- |
 | VMName                                   | Será o nome da máquina virtual e o hostname do servidor       |
