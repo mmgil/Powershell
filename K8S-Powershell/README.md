@@ -73,12 +73,12 @@ A seguir você pode ler a descrição de cada chave no arquivo json de inventár
 
 # COMO USAR
 
-- 1) Abra o Powershell no HOST do seu Hyper-v;
-- 2) Navegue até a pasta que você clonou esse projeto: cd .\Powershell\K8S-Powershell\
-- 3) Execute o comando:
+1) Abra o Powershell no HOST do seu Hyper-v;
+2) Navegue até a pasta que você clonou esse projeto: cd .\Powershell\K8S-Powershell\
+3) Execute o comando:
 
 ```powershell
-./K8S-Powershell.ps1 -InventoryFile inventario-sample-UNTAGGED.json
+.\K8S-Powershell.ps1 -InventoryFile inventario-sample-UNTAGGED.json
 ```
 
 Seu cluster de K8S estará pronto para uso depois de vários minutos.
