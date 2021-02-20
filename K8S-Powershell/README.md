@@ -7,6 +7,10 @@ Diante disso e vendo ainda o grande poder de infiltração que o Windows 10 PRO 
 
 Esse Script provisiona as VMs de acordo com o preenchimento do arquivo JSON de inventário. Nos modelos daqui do repositório será provisionado 3 masters e 2 nodes. Um outro servidor chamado controller baixará o projeto Kubespray para realizar a implantação do cluster após provisionamento das VMs. O Kubespray é um projeto para provisionamento de cluster K8S de produção no seu ambiente On Premisses usando o Ansible.
 
+Veja mais sobre o [Kubespray]
+
+[Kubespray]: https://github.com/kubernetes-sigs/kubespray
+
 # REQUISITOS
 
 ## Softwares
