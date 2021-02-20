@@ -17,8 +17,11 @@ Quer aprender PowerShell? Acesse: [DOCs Microsoft - PowerShell][] (Externo)
 
 | **NOME**                              | **DESCRIÇÃO**                                                 |
 | ------------------------------------- | ------------------------------------------------------------- |
+| [K8S-Powershell]   | O K8S é a ferramenta do momento para uma infraestrutura mais inteligente e escalável   |
 | [PRTG-Powershell]   | O PRTG é uma poderosa ferramentas de Monitoramento   |
 | [PORTAINER-Powershell]   | O PORTAINER é uma poderosa ferramentas de Gerenciamento para Docker e Swarm   |
 
+
+[K8S-Powershell]: K8S-Powershell/
 [PRTG-Powershell]: PRTG-Powershell/
 [PORTAINER-Powershell]: PORTAINER-Powershell/
