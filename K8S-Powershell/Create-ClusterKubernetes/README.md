@@ -1,3 +1,15 @@
+# COMO USAR
+
+1) Abra o Powershell no HOST do seu Hyper-v;
+2) Navegue até a pasta que você clonou esse projeto: cd .\Powershell\K8S-Powershell\Create-ClusterKubernetes\
+3) Execute o comando:
+
+```powershell
+.\Create-ClusterKubernetes.ps1 -InventoryFile inventario-sample-UNTAGGED.json
+```
+
+Seu cluster de K8S estará pronto para uso depois de vários minutos.
+
 # K8S
 O K8S (Kubernetes) sem dúvidas é a sensação do momento e já provou que chegou no mercado para ficar e diminuir as demandas com os serviços de infraestrutura através da sua poderosa arquitetura escalável.
 
@@ -39,7 +51,7 @@ git clone https://github.com/mmgil/Powershell.git
 
 ## Segundo -> Editar o arquivo de inventário
 
-Na pasta K8S-Powershell voce encontrará um arquivo modelo chamado inventario-sample-UNTAGGED.json, do qual basta editar para que o script crie o ambiente de acordo com o que foi preenchido nesse arquivo. Por Padrão o arquivo vem com 6 servidores para serem criados:
+Na pasta K8S-Powershell\Create-ClusterKubernetes você encontrará um arquivo modelo chamado inventario-sample-UNTAGGED.json, do qual basta editar para que o script crie o ambiente de acordo com o que foi preenchido nesse arquivo. Por Padrão o arquivo vem com 6 servidores para serem criados:
 
 - 1 Controller -> este servidor  ficará responsável por instalar o cluster de K8S após o provisionamento das máquinas virtuais.
 - 3 Masters -> Serão os servidores responsáveis pelo cluster de K8S.
@@ -73,15 +85,3 @@ A seguir você pode ler a descrição de cada chave no arquivo json de inventár
 | NetConfigurations.SuffixDNS              | Deixe em true para o Hyper-V gerenciar o MACAddres para você      |
 
 [CentOS]: https://cloud.centos.org/centos/7/vagrant/x86_64/images/CentOS-7.HyperV.box
-
-# COMO USAR
-
-1) Abra o Powershell no HOST do seu Hyper-v;
-2) Navegue até a pasta que você clonou esse projeto: cd .\Powershell\K8S-Powershell\
-3) Execute o comando:
-
-```powershell
-.\K8S-Powershell.ps1 -InventoryFile inventario-sample-UNTAGGED.json
-```
-
-Seu cluster de K8S estará pronto para uso depois de vários minutos.
